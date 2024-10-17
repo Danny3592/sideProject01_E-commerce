@@ -1,11 +1,82 @@
 // src/styles/main.scss
 $primary-color: #3498db;
+$dark-blue: #2980b9;
+$light-blue: #5dade2;
+$alert-red: #e74c3c;
+$success-green: #2ecc71;
+$highlight-orange: #f39c12;
 
 body {
   background-color: $primary-color;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
   color: #fff;
+}
+
+#main-header {
+  #main-nav {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .test {
+        padding: 10px 30px;
+        margin: 0;
+      }
+      .main-nav-active {
+        .test {
+          color: white;
+          background-color: $highlight-orange;
+        }
+      }
+    }
+  }
+}
+
+#posts {
+  margin-right: auto;
+  margin-left: auto;
+  .post-list-item {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+    &:hover{
+      color: yellow;
+    }
+  }
+}
+
+#post-detail {
+  text-align: center;
+  .title {
+  }
+  .post-contnet {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+#gathering {
+  .power-btn {
+    padding: 10px 20px;
+    margin-left: 24px;
+    background: yellow;
+    font-weight: bold;
+  }
+  #power-count {
+    color: balck;
+    font-size: 30px;
+    font-weight: bold;
+  }
 }

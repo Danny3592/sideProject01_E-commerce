@@ -9,6 +9,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'), // 打包後文件的輸出路徑
     filename: 'bundle.js', // 打包後 JS 文件名
+    clean:true,
+    publicPath:'/'
   },
   mode: isDevelopment ? 'development' : 'production',
   module: {
@@ -58,5 +60,6 @@ module.exports = {
     port: 3000,
     hot: true, // 開啟 HMR
     open: true,
+    historyApiFallback: true,
   },
 };
